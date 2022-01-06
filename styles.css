@@ -42,3 +42,14 @@ a:active {
 li{
     display: inline;
 }
+
+div.relative{
+    position: relative
+}
+
+img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
