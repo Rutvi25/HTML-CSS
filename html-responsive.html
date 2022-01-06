@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- Responsive Text -->
+        <h2 style="font-size: 5vw;">Responsive Text Size</h2>
+
+        <img srcset="img1.jpeg" style=" height: auto;">
+        <br><br>
+
+        <!-- changing the img at perticular screen size.-->
+        <picture>
+            <source srcset="img1.jpeg" media="(max-width:300px)">
+            <source srcset="img2.jpeg" media="(max-width:600px)">
+            <source srcset="img3.jpeg" media="(max-width:900px)">
+            <img src="img1.jpeg" alt="Flowers">
+        </picture>
+
+        <!-- Media Queries -->
+        <div class="mediaq">
+            <div class="left">
+                <p>Left Menu</p>
+              </div>
+              
+              <div class="mid">
+                <p>Main Content</p>
+              </div>
+              
+              <div class="right">
+                <p>Right Content</p>
+              </div>
+        </div>
+        
+        <!-- Responsive Web Example -->
+        <section style="font-size: 5vw;">
+            <div class="heading">
+                <br><br><h3>Example of Responsive Web</h3>
+            </div>
+            <div style="font-size: 5vw;">
+                <div class="left_part">
+                    <a href="www.google.com">Google</a>
+                    <a href="www.youtube.com">YouTube</a>
+                    <a href="www.facebook.com">Facebook</a>
+                </div>
+                <div class="mid_part">
+                    <h4>Mid part</h4>
+                    <p>This is the mid part of responsive web</p>
+                </div>
+                <div class="right_part">
+                    <p>Right Part of Responsive web</p>
+                </div>
+            </div>
+
+        </section>
+        
+    </body>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .left {
+          background-color:thistle;
+          padding: 20px;
+          float: left;
+          width: 30%; 
+        }
+        
+        .mid {
+          background-color:wheat;
+          padding: 20px;
+          float: left;
+          width: 40%; 
+        }
+        
+        .right {
+          background-color:thistle;
+          padding: 20px;
+          float: left;
+          width: 30%; 
+        }
+        
+        @media screen and (max-width: 600px) {
+          .left, .mid, .right {
+            width: 100%; 
+          }
+        }
+
+
+
+        .left_part{
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+        .left_part a{
+            background-color: skyblue;
+            width: 100%;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+
+        .mid_part{
+            float: left;
+            width: 50%;
+            text-align: center;
+            
+        }
+
+        .right_part{
+            float: left;
+            width: 25%;
+            text-align: center; 
+            background-color: slategrey;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .left_part, .mid_part, .right_part {
+                width: 100%;
+            }
+        }
+
+
+
+
+    </style>
+</html>
