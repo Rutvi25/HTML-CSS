@@ -1,0 +1,20 @@
+*{
+    font-style: italic;
+}
+
+h1{
+    background-color: slategrey;
+}
+
+.para{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+#id1{
+    text-align: center;
+    font-weight: 800;
+    font-stretch: extra-condensed;
+}
