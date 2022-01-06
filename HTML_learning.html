@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>HTML basics</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="heading">heading tag from header</h1>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <p>paragraph from article.</p>            
+                    <a href="https://www.w3schools.com/html/html_basic.asp">Link</a><br>
+                    <!-- <aside>aside tag</aside> -->
+
+                    <!-- Figure with caption -->
+                    <figure>
+                        <figcaption>Sample img with caption</figcaption>
+                        <img src="./sampleimg.png" alt="sample img" style="float: right; width: 300; height: 200; ">
+                    </figure>
+
+                    <!-- Dropdown using details tag-->
+                    <details>
+                        <summary>Event</summary>
+                        <p>Event details</p>
+                    </details>
+                </section>
+                <aside>
+                    <div>
+                        <p title="I'm the title">Mouse over this paragraph, to display the title.</p>
+                    </div>
+                </aside>
+
+                <!-- Meter tag -->
+                <p>Use of meter tag</p>
+                <meter min="0" max="100" value="70">
+                    70 out of 100
+                </meter>
+
+                <!-- Progress tag -->
+                <p>Use of Progress tag</p>
+                <progress max="100" value="80">
+                    progress tag
+                </progress><br>
+                
+                <!-- Datalist -->
+                <input type="text" list="colors" min="70">
+                <datalist id="colors">
+                    <option value="blue">
+                    <option value="red">
+                </datalist>
+                <div>
+                    <p>This is the <mark>mark</mark> tag.</p>
+                    <p>The color <del>blue</del> should be deleted and <ins>red</ins> should be inserted</ins></p>
+                    <p>This is <sub>subscript</sub> & <sup>superscript</sup> text</p>
+                    <p>quotation: <q>Browser will add quotation mark.</q></p>
+                    <p>The cite defines title of creative work: <cite>Wings of Fire</cite> by Abdul Kalam</cite></p>
+                    <p>Bidirectional Override: <bdo dir="rtl">This line will be written from right to left</bdo></p>
+                    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">It will open the link in new tab</a><br>
+                    <button id="button" onclick="document.location='https://www.w3schools.com/html/html_links.asp'">Button Link</button>
+                    <img src="./sampleimg.png" alt="sample_img" usemap="#workmap">
+                    <!-- <map name="workmap">
+                        <area shape="rect" coords="10 25 50 25" alt="sample_map" href="https://www.w3schools.com/html/html_images_imagemap.asp"> 
+                    </map> -->
+                </div>
+
+                <!-- Table -->
+                <div>
+                    <p>Table</p>
+                    <table>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Subject</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>PPS</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>DS</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- List -->
+                <div>
+                    <p>List</p>
+                    <ol>
+                        <li>tea</li>
+                        <li>milk</li>
+                        <li>milkshake</li>
+                    </ol>
+                </div>
+
+                <a href="#heading"> Jump to heading</a><br><br>
+                
+                <!-- iframe tag-->
+                <iframe src="HTML_learning.html" height="200" width="300" title="Iframe Example"></iframe>
+                
+                <br><br>
+                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">HTML-JS -demo : show the date</button>
+                <br><br>
+                <p id="demo"></p><br><br>
+
+                <!-- Form -->
+                <div>
+                    <p>form</p>
+                    <form action="form_redirect.html">
+                        <fieldset style="width: 50%;">
+                            <label for="fname">First Name</label>
+                        <input type="text" id="fname" value="enter first name"><br><br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" value="enter last name"><br><br>
+
+                        <!-- radio buttons -->
+                        <input type="radio" id="male" name="gen" value="male">
+                        <label for="male">male</label>
+                        <input type="radio" id="female" name="gen" value="female">
+                        <label for="female">female</label><br><br>
+
+                        <!-- Checkboxes -->
+                        <input type="checkbox" id="html" name="lang" value="html">
+                        <label for="html">html</label><br>
+                        <input type="checkbox" id="css" name="lang" value="Css">
+                        <label for="css"> css</label><br>
+                        <input type="checkbox" id="js" name="lang" value="js">
+                        <label for="js">JS</label><br><br>
+
+                        <input type="submit" value="Submit">
+
+                        </fieldset>
+                        
+                    </form>
+                </div>
+
+
+            </article>
+        </main>
+        <footer>
+            <br><br><time datetime="2022-01-05" pubdate>
+                Jan 5, 2022
+            </time>
+        </footer>
+
+        <style>
+            table,th, td, tr{
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+            tr:nth-child(even){
+                background-color:thistle;
+            }
+        </style>
+
+        <script>
+
+        </script>
+
+    </body>
+</html>
+
+
