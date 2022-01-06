@@ -52,10 +52,25 @@
                     <p>Right Part of Responsive web</p>
                 </div>
             </div>
-
         </section>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" ></iframe>
+        </div>
+
+        <div>
+            <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #303030;"></canvas>
+        </div>
         
     </body>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World",10,50);
+    </script>
+
     <style>
         * {
           box-sizing: border-box;
@@ -88,8 +103,6 @@
           }
         }
 
-
-
         .left_part{
             float: left;
             width: 25%;
@@ -110,7 +123,6 @@
             float: left;
             width: 50%;
             text-align: center;
-            
         }
 
         .right_part{
@@ -125,9 +137,6 @@
                 width: 100%;
             }
         }
-
-
-
 
     </style>
 </html>
