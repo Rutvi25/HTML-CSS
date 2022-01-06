@@ -23,3 +23,22 @@ h1{
     font-weight: 800;
     font-stretch: extra-condensed;
 }
+
+a:visited {
+    color: purple;
+    background-color: rosybrown;
+}
+
+a:hover {
+    color: red;
+    background-color: salmon;
+}
+
+a:active {
+    color: blue;
+    background-color: sandybrown;
+}
+
+li{
+    display: inline;
+}
