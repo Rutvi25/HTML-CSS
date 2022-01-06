@@ -4,13 +4,16 @@
 
 h1{
     background-color: slategrey;
+    opacity: 0.5;
+    
 }
 
 .para{
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    background-color: blanchedalmond;
+    background-color: rgba(32, 55, 22, 0.5);
+    border-style: dashed;
 }
 
 #id1{
