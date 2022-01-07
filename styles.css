@@ -103,4 +103,18 @@ div > p {
     grid-row: 4 / span 2;
 }
 
+.pagination {
+    display: inline;
+  }
+  
+.pagination a {
+    float: left;
+    padding: 8px 8px;
+}
 
+.pagination a.active {
+background-color:darkkhaki;
+color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
