@@ -43,7 +43,7 @@ li{
     display: inline;
 }
 
-div.relative{
+div .relative{
     position: relative
 }
 
@@ -53,3 +53,4 @@ img{
     top: 0;
     z-index: -1;
 }
+
