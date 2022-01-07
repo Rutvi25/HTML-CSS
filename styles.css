@@ -54,3 +54,6 @@ img{
     z-index: -1;
 }
 
+div > p {
+    background-color: cornflowerblue;
+}
