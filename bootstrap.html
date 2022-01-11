@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        [class*="col"]{
+            padding: 1rem;
+            background-color: aliceblue;
+            border: 2px solid #303030;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div class="container-md border">       <!--Container will behave like fluide for <md screen-->
+        First Container
+    </div>
+    <div class="container border">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">col1</div>
+            <div class="col-lg-4 col-md-6">col2</div>
+        </div>
+
+        <div class="row align-items-end" style="height: 75px;">
+            <div class="col">
+                First column
+            </div>
+            <div class="col">
+                Second column
+            </div>
+            <div class="col">
+                Third Column
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center my-5">Gutter</h2>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6"><div class="child">1</div></div>
+            <div class="col-6"><div class="child">2</div></div>
+            <div class="col-6"><div class="child">3</div></div>
+            <div class="col-6"><div class="child">4</div></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="btn btn-primary">Button</div>
+        <div class="btn btn-success">Button</div>
+        <div class="btn btn-outline-info btn-lg">Button</div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="card" >
+                        <img src="./images1.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit dolore sit, fuga at, ipsa atque temporibus optio tempora, ducimus recusandae sunt iure tempore quidem cupiditate non nihil suscipit ex.</p>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="./images1.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit dolore sit, fuga at, ipsa atque temporibus optio tempora, ducimus recusandae sunt iure tempore quidem cupiditate non nihil suscipit ex.</p>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="./images1.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit dolore sit, fuga at, ipsa atque temporibus optio tempora, ducimus recusandae sunt iure tempore quidem cupiditate non nihil suscipit ex.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>H1 heading</h1>
+                <h2>H2 heading</h2>
+                <p class="h3">H3 heading</p>
+            </div>
+
+            <div class="col-md-6">
+                <h1>H1 heading</h1>
+                <h2>H2 heading</h2>
+                <p class="h3">H3 heading</p>
+            </div>
+
+            <div>
+                <h1 class="display-3">Display 1</h1>
+                <h1 class="display-4">Display 2</h1>
+                <h1 class="display-5">Display 3</h1>
+            </div>
+
+            <!-- List & Sublists -->
+            <ul class="list-unstyled">
+                <li>Line 1</li>
+                <li>Line 2</li>
+                <li>Line 3</li>
+                <ul>
+                    <li>Subline 1</li>
+                    <li>Subline 2</li>
+                    <li>Subline 3</li>
+                </ul>
+            </ul>            
+        </div>
+
+        <!-- Images -->
+        <div style="width: 40%; border: 5px red solid">
+            <img src="./images1.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="my-5">Thumbnail</div>
+        <img src="./images1.jpg" alt="" class="img-thumbnail w-25">
+        
+        <div class="my-5">Alignment</div>
+        <img src="./images1.jpg" alt="" class="float-end w-25">
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium sequi accusamus cupiditate facilis quasi rerum dolorem consequatur totam voluptates? Minima natus, explicabo eos impedit molestiae quo commodi pariatur sapiente!</p>
+        
+        <div class="clearfix my-5">
+            <img src="./images1.jpg" alt="" class="d-block mx-auto w-25 rounded">    
+        </div>
+
+        
+        <div class="mt-5 border border-2 border-dark w-100 p-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum corrupti nulla, amet sit, eligendi deserunt vitae quae unde molestiae quo excepturi accusantium labore officiis praesentium cumque sed veritatis, ea culpa.</p>
+            <p class="m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae perspiciatis suscipit. Quo inventore necessitatibus cumque maxime distinctio maiores autem magnam! Nulla culpa natus autem inventore quam. Doloribus, inventore eos.</p>
+            <div class="d-none d-md-block d-lg-none w-50 mx-auto text-center bg-dark text-white">Centered Element</div>
+        </div>
+
+
+        <!-- Table -->
+        <h2>Table</h2>
+        <div class="table-responsive-md">
+            <table class="table table-dark table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">head</th>
+                        <th scope="col">head.</th>
+                        <th scope="col">head.</th>
+                        <th scope="col">head.</th>
+                        <th scope="col">head.</th>
+                        <th scope="col">head.</th>
+                        <th scope="col">head.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                        <td>cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Alert -->
+
+        <div class="alert alert-primary" role="alert">
+            Primary Alert
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            secondary Alert
+        </div>
+
+
+        <!-- Toast -->
+        <button type="button" class="btn btn-primary" id="ToastBtn">Show live toast</button>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                <img src="./images1.jpg" class="rounded me-2" alt="sampleimg">
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    This is a toast message.
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Icons -->
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bootstrap my-5" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+              </svg>
+        </div>
+
+
+
+        <!-- Form -->
+        <div class="container">
+            <div class="text-center">
+                <h2>Form</h2>
+                <p>post the questions</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form action="">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" placeholder="enter mail id" class="form-control">
+                        <label for="name" class="form-label">name:</label>
+                        <input type="name" id="name" placeholder="enter name" class="form-control">
+                        <label for="subject" class="form-label">subject:</label>
+                        <select name="subject" id="subject" class="form-select">
+                            <option value="pricing">pricing</option>
+                            <option value="technical">technical</option>
+                            <option value="other">other</option>
+                        </select>
+
+                        <div class="form-floating my-5">
+                            <label for="query">Message</label>
+                            <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var toastTrigger = document.getElementById('ToastBtn')
+        var toastLiveExample = document.getElementById('Toast')
+        if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+        })
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
